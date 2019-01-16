@@ -3,7 +3,7 @@
   <groupId>io.socket</groupId>
   <artifactId>socket.io-client</artifactId>
   <version>1.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>bundle</packaging>
   <name>socket.io-client</name>
   <description>Socket.IO Client Library for Java</description>
   <url>https://github.com/socketio/socket.io-client-java</url>
@@ -233,6 +233,11 @@
             <phase>site</phase>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
